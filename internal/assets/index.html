@@ -1,0 +1,39 @@
+{{if .Success}}
+    <head>
+        <title>tipmonkey Web UI</title>
+    </head>
+    <h1>tipmonkey Web UI</h1>
+    <h2>Hit button, get response:</h2>
+    <form method="POST">
+        <label>Username:</label><br />
+        <input type="text" name="username" size="80" value="{{ .Username }}"><br /><br />
+        <label for="song">Choose an option:</label><br />
+        <select name="song" id="song">
+            <option value="llama">Llama</option>
+            <option value="pluto">Pluto</option>
+            <option value="nooneknows">No One Knows</option>
+        </select><br /><br />
+        <input type="submit">
+    </form>
+    <h2>Here's the response from the previous submission:</h2>
+    <p>Request Username: {{ .Username }}</p>
+    <p>Request Song: {{ .Song }}</p>
+    <p>Response: <pre>{{ .Response }}</pre></p>
+{{else}}
+    <head>
+        <title>tipmonkey Web UI</title>
+    </head>
+    <h1>tipmonkey Web UI</h1>
+    <h2>Hit button, get response:</h2>
+    <form method="POST">
+        <label>Username:</label><br />
+        <input type="text" name="username" size="80"><br /><br />
+        <label for="song">Choose an option:</label><br />
+        <select name="song" id="song">
+            <option value="llama">Llama</option>
+            <option value="pluto">Pluto</option>
+            <option value="nooneknows">No One Knows</option>
+        </select><br /><br />
+        <input type="submit">
+    </form>
+{{end}}
