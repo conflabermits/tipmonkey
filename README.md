@@ -16,7 +16,7 @@ Everything boils down to points, which are used to determine queue priority. Poi
 * 20+ viewer raid == 1000 points
 * 150+ viewer raid == 3000 points
 
-Broadcasters can gift points to users, and if desired they can also allow mods the same privilege. 
+Broadcasters can gift points to users, and if desired they can also allow mods the same privilege.
 
 ### Request system
 
