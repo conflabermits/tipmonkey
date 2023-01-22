@@ -2,9 +2,18 @@
 
 Let the monkey hold the cup so you can focus on making the music.
 
-## Technical/Development Details
+## High-level goals
 
 Just collecting ideas, requirements, and other details here until they're more formally documented or implemented.
+
+* Automatic conversion of tips/gifts to points (that can be used to request songs)
+* Web and chatbot frontends for users to see queue, request or bump songs, etc.
+* Broadcaster/mod-specific permissions for managing the queue, requests, and points
+* API for connecting frontends to various backends (Spotify, Twitch, app DB)
+* Reports for the broadcaster/mods that track statistics and trends
+* Toggles for prevention of queue-hogging or request manipulation
+
+## Technical/Development Details
 
 ### Points system
 
